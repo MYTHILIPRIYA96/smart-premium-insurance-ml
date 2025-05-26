@@ -83,3 +83,9 @@ pip install -r requirements.txt
 # Run the Pipeline
 
 python  SmartPremium.ipynb
+
+## Demo
+
+Try it live on [Streamlit Cloud](https://smart-premium-insurance-ml-ihbhnfu8adlfm2g8e2kc4g.streamlit.app/)
+
+
