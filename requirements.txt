@@ -1,3 +1,4 @@
+Python
 streamlit
 scikit-learn
 xgboost
@@ -5,3 +6,5 @@ mlflow
 pandas
 numpy
 pickle
+matplotlib
+seaborn
