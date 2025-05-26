@@ -22,11 +22,11 @@ Customer Experience: Deliver real-time, personalized insurance quotes.
 ├── best_model.pkl # Final saved model (Pickle)
 ├── train.csv # Training dataset
 ├── test.csv # Test dataset
-├── SmartPremium.py # Main script with full pipeline
+├── SmartPremium.ipynb # Main script with full pipeline
 ├── README.md # Project documentation
+├── app.py
 
-
-## 📊 Features Used
+## Features Used
 
 - **Demographics:** Age, Gender, Marital Status
 - **Health & Lifestyle:** Smoking Status, Exercise Frequency, Pre-existing Conditions
@@ -39,7 +39,7 @@ Customer Experience: Deliver real-time, personalized insurance quotes.
   - Feedback Encodings
   - Frequency Encodings for Categorical Columns
 
-## ⚙️ Pipeline Overview
+##  Pipeline Overview
 
 1. **Data Ingestion**
 2. **Exploratory Data Analysis (EDA)**
@@ -75,8 +75,7 @@ Customer Experience: Deliver real-time, personalized insurance quotes.
 ### 1. Clone the Repository
 
 '''bash
-git clone https://https://github.com/MYTHILIPRIYA96/smartpremium-insurance-ml.git
-cd insurance-premium-prediction
+git clone https://https://github.com/MYTHILIPRIYA96/smartpremium-insurance-ml
 '''
 # Install Dependencies
 pip install -r requirements.txt
