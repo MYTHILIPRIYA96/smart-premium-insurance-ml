@@ -82,4 +82,4 @@ pip install -r requirements.txt
 
 # Run the Pipeline
 
-python insurance_pipeline.py
+python  SmartPremium.ipynb
