@@ -17,3 +17,70 @@ Financial Institutions: Estimate risk for products bundled with insurance.
 Healthcare Providers: Forecast long-term healthcare costs.
 
 Customer Experience: Deliver real-time, personalized insurance quotes.
+
+# Project Structure
+├── best_model.pkl # Final saved model (Pickle)
+├── train.csv # Training dataset
+├── test.csv # Test dataset
+├── SmartPremium.py # Main script with full pipeline
+├── README.md # Project documentation
+
+
+## 📊 Features Used
+
+- **Demographics:** Age, Gender, Marital Status
+- **Health & Lifestyle:** Smoking Status, Exercise Frequency, Pre-existing Conditions
+- **Financial:** Annual Income, Credit Score
+- **Insurance History:** Number of Claims, Policy Type, Claim Amounts
+- **Custom Engineered Features:**
+  - Age Groups (bins)
+  - Credit Score Categories
+  - Interaction Features (e.g., Age × Income)
+  - Feedback Encodings
+  - Frequency Encodings for Categorical Columns
+
+## ⚙️ Pipeline Overview
+
+1. **Data Ingestion**
+2. **Exploratory Data Analysis (EDA)**
+3. **Data Cleaning & Missing Value Imputation**
+4. **Feature Engineering**
+5. **Data Splitting (Train/Test)**
+6. **Model Training**
+   - Linear Regression
+   - Decision Tree Regressor
+   - Random Forest Regressor
+   - XGBoost Regressor
+7. **Hyperparameter Tuning**
+   - `GridSearchCV` on best-performing models
+8. **Model Evaluation**
+   - RMSE, MAE, R² Score, RMSLE
+9. **MLflow Integration**
+   - Auto-logging models, parameters, and metrics
+10. **Model Export**
+   - Save the best model using 'pickle'
+
+## Sample Evaluation Metrics
+
+| Model              | RMSE   | MAE    | R²     | RMSLE  |
+|-------------------|--------|--------|--------|--------|
+| XGBoost Regressor | 150.23 | 102.56 | 0.8932 | 0.2123 |
+| Random Forest      | 158.90 | 110.45 | 0.8765 | 0.2198 |
+
+ Best model is logged in MLflow and saved as 'best_model.pkl'.
+
+
+##  Getting Started
+
+### 1. Clone the Repository
+
+'''bash
+git clone https://github.com/mythilipriya96/insurance-premium-prediction.git
+cd insurance-premium-prediction
+'''
+# Install Dependencies
+pip install -r requirements.txt
+
+# Run the Pipeline
+
+python insurance_pipeline.py
