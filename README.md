@@ -75,7 +75,7 @@ Customer Experience: Deliver real-time, personalized insurance quotes.
 ### 1. Clone the Repository
 
 '''bash
-git clone https://https://github.com/MYTHILIPRIYA96/smartpremium-insurance-ml
+git clone https://github.com/MYTHILIPRIYA96/smart-premium-insurance-ml
 '''
 # Install Dependencies
 pip install -r requirements.txt
